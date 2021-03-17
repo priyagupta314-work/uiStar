@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500&display=swap');
+
+body{
+    font-family: 'Catamaran', sans-serif;
+}
+:root{
+    --color-primary: #0d1b2a;
+    --color-primary2: #1b263b;
+    --color-secondary: #778da9;
+    --color-secondary2: #e0e1dd;
+    --color-white: white;
+
+}
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 0.3rem;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    background-color: var(--color-primary);
+    justify-content: space-between;
+    color: var(--color-secondary);
+    
+}
+
+.nav > h1{
+    font-size: 4em;
+    margin: 0.5rem 0.5rem;
+    color: var(--color-white);
+}
+
+
+
+.nav-list-item{
+    display: inline;
+    padding: 1rem;
+}
+
+.aside{
+    border-right: 1px solid var(--color-primary);
+    height: 100%;
+    background-color: var(--color-primary2);
+    color: var(--color-secondary2);
+}
+.aside-list-item{
+    list-style: none;
+    padding: 0.5rem;
+    
+    margin: auto;
+    width: 100%;
+}
+.main{
+    background-color: var(--color-secondary2);
+    padding: 1rem;
+}
+li:hover{
+    font-weight: bold;
+    color: #b4436c;
+}
+
