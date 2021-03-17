@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> uiStar </title>
     <link href="style.css" rel="stylesheet" />
-</head>
-<body>
     
+</head>
+
+<body>
+
     <div class="nav">
         <h1> ui⭐</h1>
         <ul class="nav-list">
@@ -18,27 +21,70 @@
         </ul>
     </div>
     <div class="layout">
-    <div class="aside">
-        <ul class="aside-list">
-            <li class="aside-list-item"> Avatar </li>
-            <li class="aside-list-item"> Alert </li>
-            <li class="aside-list-item"> Badge </li>
-            <li class="aside-list-item"> Button </li>
-            <li class="aside-list-item"> Card </li>
-            <li class="aside-list-item"> Images </li>
-            <li class="aside-list-item"> Forms </li>
-            <li class="aside-list-item"> Lists </li>
-            <li class="aside-list-item"> Modal </li>
-            <li class="aside-list-item"> Navigation </li>
+        <div class="aside">
+            <ul class="aside-list">
+                
+                <a href="#avatar-head" class="aside-link">
+                <li class="aside-list-item"> Avatar </li> </a>
 
-            <li class="aside-list-item"> Typography </li>
-            <li class="aside-list-item"> Badges </li>
-        </ul>
-    </div>
-    <div class="main">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sit laborum veritatis velit quibusdam architecto consequuntur. Dolorem vel vero porro ratione labore rerum est illum, iure, odit, autem laboriosam aperiam!</p>
-    </div>
-</div>
+                <a href="#alert-head" class="aside-link"><li class="aside-list-item"> Alert </li> </a>
+
+                <li class="aside-list-item"> Badge </li>
+                <li class="aside-list-item"> Button </li>
+                <li class="aside-list-item"> Card </li>
+                <li class="aside-list-item"> Images </li>
+                <li class="aside-list-item"> Forms </li>
+                <li class="aside-list-item"> Lists </li>
+                <li class="aside-list-item"> Modal </li>
+                <li class="aside-list-item"> Navigation </li>
+
+                <li class="aside-list-item"> Typography </li>
+                <li class="aside-list-item"> Badges </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="avatar">
+                <h2 id="avatar-head" class="section-head"> Avatar </h2>
+                <div class="avatar-div-small">
+                    <img class="avatar-img-small" src="avatar-svgrepo-com-male.svg" />
+                    <img class="avatar-img-small" src="avatar-svgrepo-com-female.svg" />
+                </div>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=hopscotch&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-div-small%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img-small%2522%2520src%253D%2522avatar-svgrepo-com-male.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img-small%2522%2520src%253D%2522avatar-svgrepo-com-female.svg%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520"
+                    style="width: 757px; height: 275px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            
+                <div class="avatar-div-medium">
+                    <img class="avatar-img-medium" src="avatar-svgrepo-com-male.svg" />
+                    <img class="avatar-img-medium" src="avatar-svgrepo-com-female.svg" />
+                </div>
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=hopscotch&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-div%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522avatar-svgrepo-com-male.svg%2522%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522avatar-svgrepo-com-female.svg%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520"
+                    style="width: 715px; height: 275px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
+            </div>
+            <!--end of class avatar-->
+            <div class="alert">
+                <h2 id="alert-head" class="section-head">
+                    Alert
+                </h2>
+
+                <div class="alert-msg"> <span class="alert-msg alert-msg-success"> Payment Successful! </span></div>
+
+                <div class="alert-msg"> <span class="alert-msg alert-msg-warning"> 2 days left for payment! </span></div>
+
+                <div class="alert-msg"> <span class="alert-msg alert-msg-failure">Transaction unsuccessful.</span></div>
+
+                <div class="alert-msg"> <span class="alert-msg alert-msg-info">Files uploaded. </span></div>
+            </div>
+        </div> <!--end of class alert-->
+        <!--end of class main-->
+
+    </div> <!-- end of class layout-->
 </body>
-</html>
 
+</html>

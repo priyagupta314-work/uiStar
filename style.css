@@ -9,12 +9,20 @@ body{
     --color-secondary: #778da9;
     --color-secondary2: #e0e1dd;
     --color-white: white;
+    --color-hover: rgb(221, 70, 95);
+    --color-success: green;
+    --color-warning: orange;
+    --color-failure: rgba(236, 106, 106, 0.979);
+    --color-info: rgb(0, 153, 255);
+
 
 }
 .layout{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-column-gap: 0.3rem;
+    position: absolute;
+    top: 20%;
 }
 .nav{
     display: flex;
@@ -23,6 +31,9 @@ body{
     justify-content: space-between;
     color: var(--color-secondary);
     
+    top: 0rem;
+    position: fixed;
+    z-index: 1;
 }
 
 .nav > h1{
@@ -30,19 +41,24 @@ body{
     margin: 0.5rem 0.5rem;
     color: var(--color-white);
 }
-
+.nav-list{
+    align-self: flex-end;
+    padding-right: 1rem;
+}
 
 
 .nav-list-item{
     display: inline;
     padding: 1rem;
+    font-size: 1.2rem;
 }
 
 .aside{
     border-right: 1px solid var(--color-primary);
     height: 100%;
     background-color: var(--color-primary2);
-    color: var(--color-secondary2);
+    
+    
 }
 .aside-list-item{
     list-style: none;
@@ -50,13 +66,71 @@ body{
     
     margin: auto;
     width: 100%;
+    color: var(--color-secondary2);
+}
+.aside-link{
+    text-decoration: none;
 }
 .main{
     background-color: var(--color-secondary2);
     padding: 1rem;
+   
 }
 li:hover{
     font-weight: bold;
-    color: #b4436c;
+    color: var(--color-hover);
+}
+.section-head{
+    background-color: var(--color-white);
+    padding-left: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 0.2rem;
+}
+.avatar-div-medium{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 1rem;
+}
+.avatar-img-medium{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.avatar-div-small{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 1rem;
+}
+.avatar-img-small{
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+iframe{
+    margin-left: 5rem;
+    background-color: var(--color-hover);
+}
+.alert-msg{
+    
+    margin: 1rem;
+    border-radius: 0.2rem;
+    color: var(--color-white);
+    letter-spacing: 0.2em;
+    padding: 0.3rem;
+    font-weight: bold;
 }
 
+.alert-msg-success{
+    background-color: var(--color-success); 
+}
+.alert-msg-warning{
+    background-color: var(--color-warning); 
+}
+.alert-msg-failure{
+    background-color: var(--color-failure); 
+}
+.alert-msg-info{
+    background-color: var(--color-info); 
+}
