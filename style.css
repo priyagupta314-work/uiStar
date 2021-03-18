@@ -4,12 +4,12 @@ body{
     font-family: 'Catamaran', sans-serif;
 }
 :root{
-    --color-primary: #0d1b2a;
-    --color-primary2: #1b263b;
-    --color-secondary: #778da9;
-    --color-secondary2: #e0e1dd;
+    --color-primary: #1d3557;
+    --color-primary2: #457b9d;
+    --color-secondary: #a8dadc;
+    --color-secondary2: #f1faee;
     --color-white: white;
-    --color-hover: rgb(221, 70, 95);
+    --color-hover: #e63946;
     --color-success: green;
     --color-warning: orange;
     --color-failure: rgba(236, 106, 106, 0.979);
@@ -17,6 +17,7 @@ body{
 
 
 }
+
 
 .layout{
     display: grid;
@@ -78,14 +79,15 @@ body{
    
 }
 li:hover{
-    font-weight: bold;
-    color: var(--color-hover);
+    font-size: 1.5rem;
+  
 }
 .section-head{
     background-color: var(--color-secondary);
     padding-left: 1rem;
     border: 1px solid var(--color-secondary);
     border-radius: 0.2rem;
+    color: var(--color-primary);
 }
 .avatar-div-medium{
     display: flex;
@@ -161,4 +163,59 @@ iframe{
 }
 .badge-info{
     background-color: var(--color-info);
+}
+
+/* css for buttons */
+.button{
+    border-radius:0.4rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    border: none;
+}
+.button-primary{
+    background-color: var(--color-primary2);
+    color: var(--color-secondary2);
+    
+}
+.button-secondary{
+    border: 2px solid var(--color-primary2);
+    padding: 0.3rem;
+}
+
+
+.button-dark{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+     border: 1px solid var(--color-primary2);
+     padding: 0.3rem;
+}
+.button-dark:hover{
+    background-color: var(--color-secondary2);
+    color: var(--color-primary);
+}
+.button-light{
+    background-color: var(--color-secondary2);
+    border: none;
+}
+.button-light:hover{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+.button-success{
+    background-color: var(--color-success);
+    color: var(--color-white);
+}
+.button-failure{
+    background-color: var(--color-failure);
+    color: var(--color-white);
+    
+}
+.button-warning{
+    background-color: var(--color-warning);
+    color: var(--color-white);
+}
+.button-info{
+    background-color: var(--color-info);
+    color: var(--color-white);
 }
