@@ -105,11 +105,23 @@ li:hover{
     justify-content:space-evenly;
     margin: 1rem;
 }
+.avatar-1{
+    position: relative;
+}
+.avatar-2{
+    position: relative;
+}
 .avatar-img-small{
-    height: 8vh;
-    width: 8vh;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: 5px solid white;
+}
+.avatar-small-status{
+    position: absolute;
+    top: 40px;
+    left: 45px;
+    font-size: 0.5rem
 }
 iframe{
     margin-left: 5rem;
@@ -147,7 +159,7 @@ iframe{
     border-radius: 1rem;
 }
 .badge-primary{
-    background-color: blue;
+    background-color:var(--color-primary);
 }
 .badge-secondary{
     background-color: gray;
@@ -164,7 +176,9 @@ iframe{
 .badge-info{
     background-color: var(--color-info);
 }
-
+.badge-special{
+    background-color: var(--color-hover);
+}
 /* css for buttons */
 .button{
     border-radius:0.4rem;
@@ -180,7 +194,7 @@ iframe{
 }
 .button-secondary{
     border: 2px solid var(--color-primary2);
-    padding: 0.3rem;
+    color: var(--color-primary2);
 }
 
 
@@ -219,3 +233,45 @@ iframe{
     background-color: var(--color-info);
     color: var(--color-white);
 }
+
+/* css for cards */
+.card-with-text-only{
+    display: flex;
+    
+}
+.card-with-dismiss{
+    display: flex;
+}
+.card-with-image{
+    display: flex;
+}
+.card-with-badge{
+    display: flex;
+    
+}
+
+.card-design{
+    
+    border: 3px solid var(--color-white);
+    border-radius: 0.3rem;
+    max-width: 300px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.card-design > h3{
+    text-align: center;
+}
+.card-design > p{
+    flex-grow: 1;
+    padding: 1rem;
+}
+.card-design > button{
+    margin: 0.2rem;
+}
+
+
+
