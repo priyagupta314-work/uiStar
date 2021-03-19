@@ -272,6 +272,16 @@ iframe{
 .card-design > button{
     margin: 0.2rem;
 }
-
+.footer{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: fixed;
+    bottom: 10px;
+       
+    
+}
+.copyright-info{
+    opacity: 0.5;
+}
 
 
