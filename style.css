@@ -4,27 +4,39 @@ body{
     font-family: 'Catamaran', sans-serif;
 }
 :root{
-    --color-primary: #1d3557;
-    --color-primary2: #457b9d;
-    --color-secondary: #a8dadc;
-    --color-secondary2: #f1faee;
+    --color-primary:  #1E3A8A;
+    
+    --color-secondary: #faf3dd;
+    
     --color-white: white;
     --color-hover: #e63946;
     --color-success: green;
     --color-warning: orange;
     --color-failure: rgba(236, 106, 106, 0.979);
     --color-info: rgb(0, 153, 255);
-
+    --color-gray: gray;
 
 }
-
+.home-page{
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+}
+.home-page > img{
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+    padding-top: 70px;
+}
+.home-page >h3{
+    color: var(--color-gray);
+}
 
 .layout{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 0.3rem;
-    position: absolute;
-    top: 15%;
+    display: flex;
+    
+    
 }
 .nav{
     display: flex;
@@ -33,9 +45,7 @@ body{
     justify-content: space-between;
     color: var(--color-secondary);
     
-    top: 0rem;
-    position: fixed;
-    z-index: 1;
+   
 }
 
 .nav > h1{
@@ -53,32 +63,35 @@ body{
     display: inline;
     padding: 1rem;
     font-size: 1.2rem;
+    text-decoration: none;
+}
+.link{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.link-active{
+    font-weight: bold;
+    color: pink;
 }
 
-.aside{
-    border-right: 1px solid var(--color-primary);
-    height: 100%;
-    background-color: var(--color-primary2);
-    
-    
-}
 .aside-list-item{
     list-style: none;
     padding: 0.5rem;
-    
     margin: auto;
-    width: 100%;
-    color: var(--color-secondary2);
+    max-width: 300px;
+    min-width: 200px;
 }
 .aside-link{
     text-decoration: none;
+    color: inherit;
 }
+
 .main{
-    background-color: var(--color-secondary2);
+    border-left: 1px solid var(--color-primary);
     padding: 1rem;
    
 }
-li:hover{
+.aside-list-item:hover{
     font-size: 1.5rem;
   
 }
@@ -181,40 +194,42 @@ iframe{
 }
 /* css for buttons */
 .button{
-    border-radius:0.4rem;
+    
     padding: 0.5rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
     border: none;
 }
 .button-primary{
-    background-color: var(--color-primary2);
-    color: var(--color-secondary2);
-    
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid white;
 }
 .button-secondary{
-    border: 2px solid var(--color-primary2);
-    color: var(--color-primary2);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: inherit;
+
 }
 
 
 .button-dark{
     background-color: var(--color-secondary);
-    color: var(--color-white);
-     border: 1px solid var(--color-primary2);
-     padding: 0.3rem;
+     color: var(--color-primary);
+     border: 1px solid var(--color-primary);
+     
 }
 .button-dark:hover{
-    background-color: var(--color-secondary2);
-    color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 .button-light{
-    background-color: var(--color-secondary2);
+    background-color: inherit;
     border: none;
 }
 .button-light:hover{
     background-color: var(--color-secondary);
-    color: var(--color-white);
+
 }
 .button-success{
     background-color: var(--color-success);
@@ -235,53 +250,80 @@ iframe{
 }
 
 /* css for cards */
-.card-with-text-only{
-    display: flex;
-    
-}
-.card-with-dismiss{
-    display: flex;
-}
-.card-with-image{
-    display: flex;
-}
-.card-with-badge{
-    display: flex;
-    
-}
+
 
 .card-design{
     
-    border: 3px solid var(--color-white);
-    border-radius: 0.3rem;
-    max-width: 300px;
-    background-color: var(--color-secondary);
+    border: 3px solid var(--color-primary);
+    border-radius: 0.3rem; 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
+    min-width: 250px;
+    width: min-content;
 }
 
-.card-design > h3{
+.card-heading{
     text-align: center;
 }
-.card-design > p{
-    flex-grow: 1;
+.card-para{
+
     padding: 1rem;
 }
-.card-design > button{
-    margin: 0.2rem;
+.card-buttons{
+    margin: auto;
+    margin-bottom: 1rem;
+    
 }
+
+/* CSS for images */
+.responsive-image{
+    height: auto;
+    max-width: 100%;
+}
+.rounded-image{
+    border-radius: 50%;
+}
+
+
+/* CSS for lists */
+.unordered-list-style2{
+    list-style-type: square;
+}
+.ordered-list-style2{
+    list-style-type: lower-roman;
+}
+.inline-list-item{
+    display: inline;
+    padding: 1rem;
+}
+
+/* CSS for rating stars */
+.rating-star{
+    font-size: 1.5rem;
+
+}
+
+.rating-star-image{
+    height: 20px;
+    width: 20px;
+    border: none;
+}
+
 .footer{
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    position: fixed;
-    bottom: 10px;
-       
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
     
-}
-.copyright-info{
-    opacity: 0.5;
-}
+}  
+.fab{
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}     
+
 
 
