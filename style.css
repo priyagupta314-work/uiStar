@@ -32,6 +32,9 @@ body{
 .home-page >h3{
     color: var(--color-gray);
 }
+.lib-name{
+    color: var(--color-hover);
+}
 
 .layout{
     display: flex;
