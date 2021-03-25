@@ -5,67 +5,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> uiStore </title>
-    
+    <title> uiFlakes | Modals </title>
+
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
 </head>
 
 <body>
 
     <nav class="nav">
-        <h1 class="lib-header"> uiStore </h1>
+        <h1 class="lib-header"> uiFlakes ❄️ </h1>
         <ul class="nav-list">
-            <a href="index.html" class="link"><li class="nav-list-item">  Home  </li> </a>
-            <a href="getting-started.html" class="link"><li class="nav-list-item"> Get Started </li> </a>
-            <a href="avatar.html" class="link link-active"><li class="nav-list-item"> Docs </li></a>
+            <a href="index.html" class="link">
+                <li class="nav-list-item"> Home </li>
+            </a>
+            <a href="getting-started.html" class="link">
+                <li class="nav-list-item"> Get Started </li>
+            </a>
+            <a href="avatar.html" class="link link-active">
+                <li class="nav-list-item"> Docs </li>
+            </a>
         </ul>
     </nav>
     <div class="layout">
         <div class="aside">
             <ul class="aside-list">
-                
-                <a href="avatar.html" class="aside-link"><li class="aside-list-item"> Avatar </li> </a>
-                <a href="alert.html" class="aside-link"><li class="aside-list-item"> Alert </li> </a>
-                <a href="badge.html" class="aside-link"><li class="aside-list-item"> Badge </li> </a>
-                <a href="button.html" class="aside-link"><li class="aside-list-item"> Button </li> </a>
-                <a href="card.html" class="aside-link"><li class="aside-list-item"> Card </li></a>
-                <a href="input.html" class="aside-link"><li class="aside-list-item"> Input </li></a>
-                <a href="image.html" class="aside-link"><li class="aside-list-item"> Image </li></a>
-                <a href="list.html" class="aside-link"><li class="aside-list-item"> Lists </li></a>
-                <a href="modal.html" class="aside-link"><li class="aside-list-item"> Modal </li></a>
-                <a href="navigation.html" class="aside-link"><li class="aside-list-item"> Navigation </li> </a>
-                <a href="rating.html" class="aside-link"><li class="aside-list-item"> Rating </li></a>
-                <a href="typography.html" class="aside-link"><li class="aside-list-item"> Typography </li></a>
-           
+
+                <a href="avatar.html" class="aside-link">
+                    <li class="aside-list-item"> Avatar </li>
+                </a>
+                <a href="alert.html" class="aside-link">
+                    <li class="aside-list-item"> Alert </li>
+                </a>
+                <a href="badge.html" class="aside-link">
+                    <li class="aside-list-item"> Badge </li>
+                </a>
+                <a href="button.html" class="aside-link">
+                    <li class="aside-list-item"> Button </li>
+                </a>
+                <a href="card.html" class="aside-link">
+                    <li class="aside-list-item"> Card </li>
+                </a>
+                <a href="input.html" class="aside-link">
+                    <li class="aside-list-item"> Input </li>
+                </a>
+                <a href="image.html" class="aside-link">
+                    <li class="aside-list-item"> Image </li>
+                </a>
+                <a href="list.html" class="aside-link">
+                    <li class="aside-list-item"> List </li>
+                </a>
+                <a href="modal.html" class="aside-link">
+                    <li class="aside-list-item"> Modal </li>
+                </a>
+                <a href="navigation.html" class="aside-link">
+                    <li class="aside-list-item"> Navigation </li>
+                </a>
+                <a href="rating.html" class="aside-link">
+                    <li class="aside-list-item"> Rating </li>
+                </a>
+                <a href="typography.html" class="aside-link">
+                    <li class="aside-list-item"> Typography </li>
+                </a>
+
             </ul>
         </div>
-    <div class="main">
-    
+        <div class="main">
+            <h2 id="alert-head" class="section-head">
+                Modal
+            </h2>
+            <p class="component-description">Modals are positioned-over everything else in the document. Modals use <code> position: fixed </code>,which can sometimes be a bit particular about its rendering. See the example below.</p>
+            <div class="modal">
+                <div> This is a modal. It will stay on page until closed. </div>
+                <button class="modal-close">x</button>
+            </div>
+            <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%253E%2520This%2520is%2520a%2520modal.%2520It%2520will%2520stay%2520on%2520page%2520until%2520closed.%2520%253C%252Fdiv%253E%250A%2520%2520%253Cbutton%2520class%253D%2522modal-close%2522%253Ex%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
+  style="width: 707px; height: 275px; padding-top: 200px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+        </div>
     </div>
-</div>
-<footer class="footer">
-    <div class="footer-text"> Follow me on: </div>
-   <a href="www.linkedin.com/in/priya-gupta-187b0821" target="_blank">
-       <i class="fab fa-linkedin"></i>    
-   </a>
-   <a href="https://github.com/priyagupta314-work">
-   <i class="fab fa-github-square"></i>
-   </a>
-   <a href="https://www.facebook.com/priya314/">
-   <i class="fab fa-facebook-square"></i>
-   </a>
-   <a href="https://www.instagram.com/priya0314/">
-   <i class="fab fa-instagram-square"></i>
-   </a>
-   <a href="https://twitter.com/priyaGupta_pi">
-   <i class="fab fa-twitter-square"></i>
-   </a>
-       <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021  </span></div>
-       
+    <footer class="footer">
+        <div class="footer-text"> Follow me on: </div>
+        <a href="www.linkedin.com/in/priya-gupta-187b0821" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/priyagupta314-work">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a href="https://www.facebook.com/priya314/">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/priya0314/">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://twitter.com/priyaGupta_pi">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021 </span></div>
 
-</footer>
+
+    </footer>
 
 </body>
+
 </html>
