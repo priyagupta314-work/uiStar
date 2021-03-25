@@ -120,12 +120,13 @@ body {
     }
 }
 
-
+ 
 iframe{
-    height: auto;
-    width: 100%;
+    height: auto;  
+    width: 100%;    
     min-height: 300px;
 }
+
 
 .aside-link {
     text-decoration: none;
