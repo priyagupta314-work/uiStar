@@ -19,6 +19,12 @@ body {
 
 }
 
+iframe {
+    height: auto;
+    width: 100%;
+    min-height: 300px;
+}
+
 /*********CSS for home page*******/
 
 .home-page {
@@ -92,41 +98,10 @@ body {
 
 /*******CSS for aside bar****/
 
-
-@media only screen and (max-width: 768px)
-{
-.aside-list{
-    padding-left: 0rem;
-}
-}
-.aside-list-item{
+.aside-list-item {
     list-style: none;
     padding: 0.5rem 0rem;
-    
 }
-@media only screen and (min-width: 768px){
-    .aside-list-item {
-               
-        width: 200px;
-        
-    }
-}
-
-@media only screen and (max-width: 768px){
-    .aside-list-item {
-               
-        width: min-content;
-        
-    }
-}
-
- 
-iframe{
-    height: auto;  
-    width: 100%;    
-    min-height: 300px;
-}
-
 
 .aside-link {
     text-decoration: none;
@@ -135,8 +110,25 @@ iframe{
 
 .aside-list-item:hover {
     font-size: 1.5rem;
-
 }
+
+@media only screen and (max-width: 768px) {
+    .aside-list {
+        padding-left: 0rem;
+    }
+
+    .aside-list-item {
+        width: min-content;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .aside-list-item {
+            width: 200px;
+    }
+}
+
+
 
 /**********CSS for main content****/
 
@@ -156,65 +148,69 @@ iframe{
     color: var(--color-primary);
 }
 
-.component-description{
+.component-description {
     font-style: italic;
     padding: 2rem;
     margin: auto;
 }
+
 /*******CSS for avatar********/
 
-.avatar{
+.avatar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
 .avatar-div-pos {
     position: relative;
 }
 
-.avatar-img{
+.avatar-img {
     border-radius: 50%;
     border: 5px solid var(--color-white);
 }
 
 .avatar-img-small {
     height: auto;
-    width: 50px;   
+    width: 50px;
 }
 
 .avatar-img-medium {
     height: auto;
-    width: 75px;    
+    width: 75px;
 }
 
 .avatar-img-large {
     height: auto;
-    width: 100px;  
+    width: 100px;
 }
 
 
-.avatar-status{
+.avatar-status {
     height: 12px;
     width: 12px;
     border-radius: 50%;
     border: 2px solid white;
     position: absolute;
 }
+
 .avatar-small-online {
     top: 40px;
     left: 45px;
-    
+
 }
 
 .avatar-medium-online {
     top: 55px;
     left: 65px;
-    
+
 }
+
 .avatar-large-online {
     top: 80px;
     left: 85px;
-    
+
 }
 
 
@@ -306,7 +302,8 @@ iframe{
     background-color: inherit;
 
 }
-.button-secondary:hover{
+
+.button-secondary:hover {
     background-color: var(--color-secondary);
 }
 
@@ -383,8 +380,8 @@ iframe{
 
 }
 
-.card-with-shadow-box > .card-design{
-    box-shadow: 0px 3px 13px 4px rgba(30,61,146,0.21);    
+.card-with-shadow-box>.card-design {
+    box-shadow: 0px 3px 13px 4px rgba(30, 61, 146, 0.21);
 }
 
 /* CSS for images */
@@ -413,7 +410,7 @@ iframe{
 }
 
 /*****modal*****/
-.modal{
+.modal {
     padding: 2rem;
     background-color: var(--color-secondary);
     position: fixed;
@@ -423,14 +420,37 @@ iframe{
     z-index: 1;
 }
 
-.modal-close{
+.modal-close {
     position: absolute;
     top: 4px;
     right: 4px;
     border: none;
 }
+/*******CSS for navigations****/
 
-/* CSS for rating stars */
+.nav-horizontal {
+    display: flex;
+    justify-content: space-between;
+    min-width: max-content;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: rgb(216, 212, 212);
+    color: var(--color-hover);
+
+}
+
+.search {
+    position: relative;
+}
+
+.search-emoji {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+
+/******CSS for rating stars*******/
 
 .fa-star,
 .fa-star-half-alt {
@@ -439,36 +459,42 @@ iframe{
 
 
 /*****CSS for typography****/
-.h1{
+.h1 {
     font-size: 2.5rem;
 }
 
-.h2{
+.h2 {
     font-size: 2rem;
 }
 
-.h3{
+.h3 {
     font-size: 1.75rem;
 }
 
-.h4{
+.h4 {
     font-size: 1.5rem;
 }
-.h5{
+
+.h5 {
     font-size: 1rem;
 }
-.h6{
+
+.h6 {
     font-size: 0.75rem;
 }
-.striked{
+
+.striked {
     text-decoration: line-through;
 }
-.highlighted{
+
+.highlighted {
     background-color: var(--color-pink);
 }
-.underlined{
+
+.underlined {
     text-decoration: underline;
 }
+
 /******CSS for footer******/
 
 .footer {
@@ -484,31 +510,10 @@ iframe{
     color: var(--color-secondary);
     font-size: 1.5rem;
     padding: 0.5rem 0.5rem 1rem 0.5rem;
-    
+
 }
 
-.fab:hover{
+.fab:hover {
     color: var(--color-pink);
 }
 
-/*******CSS for navigations****/
-
-.nav-horizontal{
-    display: flex;
-    justify-content: space-between;
-    min-width: max-content;
-    border: 1px solid black;
-    padding: 1rem;
-    background-color: rgb(216, 212, 212);
-    color: var(--color-hover);
-    
-}
-
-.search{
-    position: relative;
-}
-.search-emoji{
-    position: absolute;
-    right: 10px;
-    top: 2px;
-}
