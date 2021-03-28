@@ -192,6 +192,7 @@ iframe {
 /********CSS for badge*********/
 .badge {
     color: var(--color-white);
+    padding: 0rem 0.3rem;
 }
 .badge-primary {
     background-color: var(--color-primary);
