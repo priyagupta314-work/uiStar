@@ -9,9 +9,13 @@ body {
     --color-white: white;
     --color-hover: #e63946;
     --color-success: green;
+    --color-success-hover: rgb(37, 196, 37);
     --color-warning: orange;
+    --color-warning-hover: rgb(223, 139, 29);
     --color-failure: rgba(236, 106, 106, 0.979);
+    --color-failure-hover: red;
     --color-info: rgb(0, 153, 255);
+    --color-info-hover: rgb(18, 187, 209);
     --color-gray: gray;
     --color-pink: pink;
 }
@@ -255,17 +259,29 @@ iframe {
     background-color: var(--color-success);
     color: var(--color-white);
 }
+.button-success:hover{
+    background-color: var(--color-success-hover);
+}
 .button-failure {
     background-color: var(--color-failure);
     color: var(--color-white);
+}
+.button-failure:hover{
+    background-color: var(--color-failure-hover);
 }
 .button-warning {
     background-color: var(--color-warning);
     color: var(--color-white);
 }
+.button-warning:hover{
+    background-color: var(--color-warning-hover);
+}
 .button-info {
     background-color: var(--color-info);
     color: var(--color-white);
+}
+.button-info:hover{
+    background-color: var(--color-info-hover);
 }
 /* css for cards */
 .card-design {
