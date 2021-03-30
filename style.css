@@ -220,6 +220,7 @@ iframe {
     letter-spacing: 0.1rem;
     font-size: 1rem;
     border: none;
+    cursor: pointer;
 }
 .button-primary {
     background-color: var(--color-primary);
