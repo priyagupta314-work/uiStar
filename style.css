@@ -93,6 +93,9 @@ iframe {
 .aside-list-item:hover {
     font-size: 1.5rem;
 }
+.aside-list-item-active{
+    font-weight: bold;
+}
 @media only screen and (max-width: 768px) {
     .aside-list {
         padding-left: 0rem;
