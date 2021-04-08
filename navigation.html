@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
+
 <body>
     <nav class="nav">
         <h1 class="lib-header"> uiFlakes ❄️ </h1>
@@ -70,77 +72,101 @@
                 Navigation
             </h2>
             <p class="component-description"> Navigations bars are created using flexbox utilities and therefore are
-                super-flexible. Pick the best suited to your needs from the designs below.</p>
+                super-flexible. Pick the best suited to your needs from the designs below. Use the class <code> link-active</code> to indicate the active link.</p>
             <div class="navigations">
                 <nav class="nav-horizontal">
                     <div class="nav-brand h4">
                         Brand name
                     </div>
-                    <div class="navs">
-                        <a href='#'><button class="button button-light"> Home</button></a>
-                        <a href='#'><button class="button button-light"> Products</button></a>
-                        <a href='#'><button class="button button-light"> About </button></a>
-                    </div>
+                    <ul class="nav-list">
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Home </li>
+                        </a>
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Products </li>
+                        </a>
+                        <a href="#" class="nav-component-link link-active">
+                            <li class="nav-component-list-item"> About </li>
+                        </a>
+
+                    </ul>
                 </nav>
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navs%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Home%253C%252Fbutton%253E%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Products%253C%252Fbutton%253E%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520About%2520%253C%252Fbutton%253E%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E%250A"
-                     sandbox="allow-scripts allow-same-origin">
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=42px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-list%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Home%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Products%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2520link-active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520About%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+                    sandbox="allow-scripts allow-same-origin">
                 </iframe>
                 <hr />
                 <nav class="nav-horizontal">
                     <div class="nav-brand h4">
                         Brand name
                     </div>
-                    <div class="navs">
-                        <a href='#'><button class="button button-light"> Home</button></a>
-                        <a href='#'><button class="button button-light"> Products</button></a>
-                        <a href='#'><button class="button button-light"> About </button></a>
+
+                    <ul class="nav-list">
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Home </li>
+                        </a>
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Products </li>
+                        </a>
+                        <a href="#" class="nav-component-link link-active">
+                            <li class="nav-component-list-item"> About </li>
+                        </a>
                         <label class="search"><input placeholder="Search" /> <span
                                 class="search-emoji">🔍</span></label>
-                    </div>
+                    </ul>
                 </nav>
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navs%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Home%2520%253C%252Fbutton%253E%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Products%253C%252Fbutton%253E%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520About%2520%253C%252Fbutton%253E%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522search%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522Search%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522search-emoji%2522%253E%25F0%259F%2594%258D%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E%250A"
-                     sandbox="allow-scripts allow-same-origin">
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=42px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%250A%2520%2520%253Cul%2520class%253D%2522nav-list%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Home%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Products%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2520link-active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520About%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522search%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520placeholder%253D%2522Search%2522%2520%252F%253E%2520%253Cspan%2520class%253D%2522search-emoji%2522%253E%25F0%259F%2594%258D%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+                    sandbox="allow-scripts allow-same-origin">
                 </iframe>
                 <hr />
                 <nav class="nav-horizontal">
                     <div class="nav-brand h4">
                         Brand name
                     </div>
-                    <div class="navs">
-                        <a href='#'><button class="button button-light"> Home</button></a>
-                        <a href='#'><button class="button button-light"> Products</button></a>
-                        <a href='#'><button class="button button-light"> About </button></a>
+
+                    <ul class="nav-list">
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Home </li>
+                        </a>
+                        <a href="#" class="nav-component-link">
+                            <li class="nav-component-list-item"> Products </li>
+                        </a>
+                        <a href="#" class="nav-component-link link-active">
+                            <li class="nav-component-list-item"> About </li>
+                        </a>
                         <button class="button button-primary">Login</button>
                         <button class="button button-secondary"> Sign Up</button>
-                    </div>
+                    </ul>
                 </nav>
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navs%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Home%2520%253C%252Fbutton%253E%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520Products%2520%253C%252Fbutton%253E%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%2520%253Cbutton%2520class%253D%2522button%2520button-light%2522%253E%2520About%2520%253C%252Fbutton%253E%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-primary%2522%253ELogin%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-secondary%2522%253E%2520Sign%2520Up%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fnav%253E%250A"
-                     sandbox="allow-scripts allow-same-origin">
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=42px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2520h4%2522%253EBrand%2520name%253C%252Fdiv%253E%250A%2520%2520%253Cul%2520class%253D%2522nav-list%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Home%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520Products%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522nav-component-link%2520link-active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522nav-component-list-item%2522%253E%2520About%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-primary%2522%253ELogin%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button%2520button-secondary%2522%253E%2520Sign%2520Up%253C%252Fbutton%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fnav%253E%250A"
+                    sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="footer-text"> Follow me on: </div>
-        <a href="https://www.linkedin.com/in/priya-gupta-187b0821/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a target="_blank" href="https://github.com/priyagupta314-work">
-            <i class="fab fa-github-square"></i>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/priya314/">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/priya0314/">
-            <i class="fab fa-instagram-square"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/priyaGupta_pi">
-            <i class="fab fa-twitter-square"></i>
-        </a>
+        <div class="footer-head"> Follow me on: </div>
+        <div class="social-handle">
+            <a target="_blank" href="https://www.linkedin.com/in/priya-gupta-187b0821/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://github.com/priyagupta314-work">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/priya314/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/priya0314/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/priyaGupta_pi">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
         <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021 </span></div>
     </footer>
 </body>
+
 </html>

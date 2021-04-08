@@ -93,7 +93,7 @@ iframe {
     color: inherit;
 }
 .aside-list-item:hover {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .aside-list-item-active{
     font-weight: bold;
@@ -352,12 +352,27 @@ iframe {
 .nav-horizontal {
     display: flex;
     justify-content: space-between;
-    min-width: max-content;
-    border: 1px solid black;
-    padding: 1rem;
-    background-color: rgb(216, 212, 212);
+    min-width: max-content;  
+    background-color: var(--color-secondary);
     color: var(--color-primary);
+   }
+.nav-list {
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+.nav-component-link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.nav-component-link .link-active{
     font-weight: bold;
+}
+.nav-component-list-item {
+    display: inline;
+    padding: 1rem;
+    
+    text-decoration: none;
 }
 .search {
     position: relative;
@@ -402,11 +417,19 @@ iframe {
 }
 /******CSS for footer******/
 .footer {
-    background-color: var(--color-primary);
+    
+    background-color: var(--color-secondary);
     color: var(--color-white);
     margin-top: 1rem;
-    text-align: center;
-    padding: 1rem;
+    
+    padding: 1rem 1rem 1rem 4rem;
+}
+.social-handle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    max-height: 100px;
+    max-width: 100px;
 }
 .fab {
     color: var(--color-white);
@@ -414,5 +437,8 @@ iframe {
     padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 .fab:hover {
-    color: var(--color-secondary);
+    color: var(--color-primary);
+}
+.footer-text{
+    text-align: left;
 }
