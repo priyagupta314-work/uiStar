@@ -320,6 +320,9 @@ iframe {
     width: max-content;
     max-height: 100px;
 }
+.card-horizontal-img{
+    max-height: 100px;
+}
 
 
 
