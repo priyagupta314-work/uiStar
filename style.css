@@ -314,6 +314,15 @@ iframe {
 .card-with-shadow-box>.card-design {
     box-shadow: 0px 3px 13px 4px rgba(30, 61, 146, 0.21);
 }
+.card-horizontal{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: max-content;
+    max-height: 100px;
+}
+
+
+
 /* CSS for images */
 .responsive {
     height: auto;
