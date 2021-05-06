@@ -4,93 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>uiFlakes | Avatar</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
 <body>
     <nav class="nav">
-        <h1 class="lib-header"> uiStore </h1>
+        <h1 class="lib-header"> uiFlakes ❄ </h1>
         <ul class="nav-list">
-            <a href="index.html" class="link"><li class="nav-list-item">  Home  </li> </a>
-            <a href="getting-started.html" class="link"><li class="nav-list-item"> Get Started </li> </a>
-            <a href="avatar.html" class="link link-active"><li class="nav-list-item"> Docs </li></a>
+            <a href="index.html" class="link">
+                <li class="nav-list-item"> Home </li>
+            </a>
+            <a href="getting-started.html" class="link">
+                <li class="nav-list-item"> Get Started </li>
+            </a>
+            <a href="avatar.html" class="link link-active">
+                <li class="nav-list-item"> Docs </li>
+            </a>
         </ul>
     </nav>
     <div class="layout">
         <div class="aside">
             <ul class="aside-list">
-                
-                <a href="avatar.html" class="aside-link"><li class="aside-list-item"> Avatar </li> </a>
-                <a href="alert.html" class="aside-link"><li class="aside-list-item"> Alert </li> </a>
-                <a href="badge.html" class="aside-link"><li class="aside-list-item"> Badge </li> </a>
-                <a href="button.html" class="aside-link"><li class="aside-list-item"> Button </li> </a>
-                <a href="card.html" class="aside-link"><li class="aside-list-item"> Card </li></a>
-                <a href="input.html" class="aside-link"><li class="aside-list-item"> Input </li></a>
-                <a href="image.html" class="aside-link"><li class="aside-list-item"> Image </li></a>
-                <a href="list.html" class="aside-link"><li class="aside-list-item"> Lists </li></a>
-                <a href="modal.html" class="aside-link"><li class="aside-list-item"> Modal </li></a>
-                <a href="navigation.html" class="aside-link"><li class="aside-list-item"> Navigation </li> </a>
-                <a href="rating.html" class="aside-link"><li class="aside-list-item"> Rating </li></a>
-                <a href="typography.html" class="aside-link"><li class="aside-list-item"> Typography </li></a>
+                <a href="avatar.html" class="aside-link">
+                    <li class="aside-list-item aside-list-item-active"> Avatar </li>
+                </a>
+                <a href="alert.html" class="aside-link">
+                    <li class="aside-list-item"> Alert </li>
+                </a>
+                <a href="badge.html" class="aside-link">
+                    <li class="aside-list-item"> Badge </li>
+                </a>
+                <a href="button.html" class="aside-link">
+                    <li class="aside-list-item"> Button </li>
+                </a>
+                <a href="card.html" class="aside-link">
+                    <li class="aside-list-item"> Card </li>
+                </a>
+                <a href="image.html" class="aside-link">
+                    <li class="aside-list-item"> Image </li>
+                </a>
+                <a href="list.html" class="aside-link">
+                    <li class="aside-list-item"> List </li>
+                </a>
+                <a href="modal.html" class="aside-link">
+                    <li class="aside-list-item"> Modal </li>
+                </a>
+                <a href="navigation.html" class="aside-link">
+                    <li class="aside-list-item"> Navigation </li>
+                </a>
+                <a href="rating.html" class="aside-link">
+                    <li class="aside-list-item"> Rating </li>
+                </a>
+                <a href="typography.html" class="aside-link">
+                    <li class="aside-list-item"> Typography </li>
+                </a>
             </ul>
         </div>
-    <div class="main">
-    <div class="avatar">
-        <h2 id="avatar-head" class="section-head"> Avatar </h2>
-        
-        <div class="avatar-div-small">
-            <div class="avatar-div-small avatar-1">
-                <img class="avatar-img-small" src="avatar-svgrepo-com-male.svg" />
-                <span class="avatar-small-status"> 🟢 </span>
+        <div class="main">
+            <h2 id="avatar-head" class="section-head"> Avatar </h2>
+            <p class="component-description"> Avatars are usually used with profile pages. The avatar image with green badge shows the person online, while the orange badge shows that the person is away or offline.</p>
+            <div class="avatar">
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-small" src="images/missing_avatar.svg" />
+                    <span class="badge badge-success avatar-status avatar-small-online"> </span>
+                </div>
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-medium" src="images/missing_avatar.svg" />
+                    <span class="badge badge-success avatar-status avatar-medium-online"> </span>
+                </div>
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-large" src="images/missing_avatar.svg" />
+                    <span class="badge badge-success avatar-status avatar-large-online"> </span>
+                </div>
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-small" src="images/missing_avatar.svg" />
+                    <span class="badge badge-warning avatar-status avatar-small-online"> </span>
+                </div>
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-medium" src="images/missing_avatar.svg" />
+                    <span class="badge badge-warning avatar-status avatar-medium-online"> </span>
+                </div>
+                <div class="avatar-div-pos">
+                    <img class="avatar-img avatar-img-large" src="images/missing_avatar.svg" />
+                    <span class="badge badge-warning avatar-status avatar-large-online"> </span>
+                </div>
             </div>
-            <div class="avatar-div-small avatar-2">
-             <img class="avatar-img-small" src="avatar-svgrepo-com-female.svg" />
-             <span class="avatar-small-status" > 🟢 </span>
-            </div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2509%2509%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-small%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-success%2520avatar-status%2520avatar-small-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-medium%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-success%2520avatar-status%2520avatar-medium-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-large%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-success%2520avatar-status%2520avatar-large-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-small%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-warning%2520avatar-status%2520avatar-small-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-medium%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-warning%2520avatar-status%2520avatar-medium-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-pos%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2520avatar-img-large%2522%2520src%253D%2522images%252Fmissing_avatar.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-warning%2520avatar-status%2520avatar-large-online%2522%253E%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
         </div>
-        <iframe
-src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=hopscotch&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-div-small%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-small%2520avatar-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img-small%2522%2520src%253D%2522avatar-svgrepo-com-male.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-small-status%2522%253E%2520%25F0%259F%259F%25A2%2520%253C%252Fspan%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-div-small%2520avatar-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img-small%2522%2520src%253D%2522avatar-svgrepo-com-female.svg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522avatar-small-status%2522%253E%2520%25F0%259F%259F%25A2%2520%253C%252Fspan%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
-style="width: 791px; height: 365px; border:0; transform: scale(1); overflow:hidden;"
-sandbox="allow-scripts allow-same-origin">
-</iframe>
-    
-        <div class="avatar-div-medium">
-            <img class="avatar-img-medium" src="avatar-svgrepo-com-male.svg" />
-            <img class="avatar-img-medium" src="avatar-svgrepo-com-female.svg" />
+    </div>
+    <footer class="footer">
+        <div class="footer-head"> Follow me on: </div>
+        <div class="social-handle">
+        <a target="_blank" href="https://www.linkedin.com/in/priya-gupta-187b0821/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/priyagupta314-work">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/priya314/">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/priya0314/">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/priyaGupta_pi">
+            <i class="fab fa-twitter-square"></i>
+        </a>
         </div>
-        <iframe
-            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=hopscotch&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-div%2522%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522avatar-svgrepo-com-male.svg%2522%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar-img%2522%2520src%253D%2522avatar-svgrepo-com-female.svg%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520"
-            style="width: 715px; height: 275px; border:0; transform: scale(1); overflow:hidden;"
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
-
-
-    </div>
-    <!--end of class avatar-->
-    </div>
-</div>
-<footer class="footer">
-    <div class="footer-text"> Follow me on: </div>
-   <a href="www.linkedin.com/in/priya-gupta-187b0821" target="_blank">
-       <i class="fab fa-linkedin"></i>    
-   </a>
-   <a href="https://github.com/priyagupta314-work">
-   <i class="fab fa-github-square"></i>
-   </a>
-   <a href="https://www.facebook.com/priya314/">
-   <i class="fab fa-facebook-square"></i>
-   </a>
-   <a href="https://www.instagram.com/priya0314/">
-   <i class="fab fa-instagram-square"></i>
-   </a>
-   <a href="https://twitter.com/priyaGupta_pi">
-   <i class="fab fa-twitter-square"></i>
-   </a>
-       <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021  </span></div>
-       
-
-</footer>
-
+        <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021 </span></div>
+    </footer>
 </body>
 </html>

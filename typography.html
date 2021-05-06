@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> uiStore </title>
-    
+    <title> uiFlakes | Typography </title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-
 <body>
-
     <nav class="nav">
-        <h1 class="lib-header"> uiStore </h1>
+        <h1 class="lib-header"> uiFlakes ❄ </h1>
         <ul class="nav-list">
-            <a href="index.html" class="link"><li class="nav-list-item">  Home  </li> </a>
-            <a href="getting-started.html" class="link"><li class="nav-list-item"> Get Started </li> </a>
-            <a href="avatar.html" class="link link-active"><li class="nav-list-item"> Docs </li></a>
+            <a href="index.html" class="link">
+                <li class="nav-list-item"> Home </li>
+            </a>
+            <a href="getting-started.html" class="link">
+                <li class="nav-list-item"> Get Started </li>
+            </a>
+            <a href="avatar.html" class="link link-active">
+                <li class="nav-list-item"> Docs </li>
+            </a>
         </ul>
     </nav>
     <div class="layout">
         <div class="aside">
             <ul class="aside-list">
-                
-                <a href="avatar.html" class="aside-link"><li class="aside-list-item"> Avatar </li> </a>
-                <a href="alert.html" class="aside-link"><li class="aside-list-item"> Alert </li> </a>
-                <a href="badge.html" class="aside-link"><li class="aside-list-item"> Badge </li> </a>
-                <a href="button.html" class="aside-link"><li class="aside-list-item"> Button </li> </a>
-                <a href="card.html" class="aside-link"><li class="aside-list-item"> Card </li></a>
-                <a href="input.html" class="aside-link"><li class="aside-list-item"> Input </li></a>
-                <a href="image.html" class="aside-link"><li class="aside-list-item"> Image </li></a>
-                <a href="list.html" class="aside-link"><li class="aside-list-item"> Lists </li></a>
-                <a href="modal.html" class="aside-link"><li class="aside-list-item"> Modal </li></a>
-                <a href="navigation.html" class="aside-link"><li class="aside-list-item"> Navigation </li> </a>
-                <a href="rating.html" class="aside-link"><li class="aside-list-item"> Rating </li></a>
-                <a href="typography.html" class="aside-link"><li class="aside-list-item"> Typography </li></a>
-           
+                <a href="avatar.html" class="aside-link">
+                    <li class="aside-list-item"> Avatar </li>
+                </a>
+                <a href="alert.html" class="aside-link">
+                    <li class="aside-list-item"> Alert </li>
+                </a>
+                <a href="badge.html" class="aside-link">
+                    <li class="aside-list-item"> Badge </li>
+                </a>
+                <a href="button.html" class="aside-link">
+                    <li class="aside-list-item"> Button </li>
+                </a>
+                <a href="card.html" class="aside-link">
+                    <li class="aside-list-item"> Card </li>
+                </a>
+                <a href="image.html" class="aside-link">
+                    <li class="aside-list-item"> Image </li>
+                </a>
+                <a href="list.html" class="aside-link">
+                    <li class="aside-list-item"> List </li>
+                </a>
+                <a href="modal.html" class="aside-link">
+                    <li class="aside-list-item"> Modal </li>
+                </a>
+                <a href="navigation.html" class="aside-link">
+                    <li class="aside-list-item"> Navigation </li>
+                </a>
+                <a href="rating.html" class="aside-link">
+                    <li class="aside-list-item"> Rating </li>
+                </a>
+                <a href="typography.html" class="aside-link">
+                    <li class="aside-list-item aside-list-item-active"> Typography </li>
+                </a>
             </ul>
         </div>
-    <div class="main">
-    
+        <div class="main">
+            <h2 id="alert-head" class="section-head">
+                Typography
+            </h2>
+            <p class="component-description">Use the various typographic styles to convey relevant meaning. Relevant
+                class names can be used to get the desired style.</p>
+            <div class="h1"> This is the largest text. </div>
+            <div class="h2"> This is second largest text. </div>
+            <div class="h3"> This is third largest text. </div>
+            <div class="h4"> This is fourth largest text. </div>
+            <div class="h5"> This is fifth largest text. </div>
+            <div class="h6"> This is sixth largest text. </div>
+            <div class="striked"> This is striked text. </div>
+            <div> This is <span class="highlighted"> highlighted</span> text. </div>
+            <div> This is <span class="underlined">underlined</span> text. </div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=42px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522h1%2522%253E%2520This%2520is%2520the%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h2%2522%253E%2520This%2520is%2520second%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h3%2522%253E%2520This%2520is%2520third%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h4%2522%253E%2520This%2520is%2520fourth%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h5%2522%253E%2520This%2520is%2520fifth%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522h6%2522%253E%2520This%2520is%2520sixth%2520largest%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522striked%2522%253E%2520This%2520is%2520striked%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%253E%2520This%2520is%2520%253Cspan%2520class%253D%2522highlighted%2522%253E%2520highlighted%253C%252Fspan%253E%2520text.%2520%253C%252Fdiv%253E%250A%253Cdiv%253E%2520This%2520is%2520%253Cspan%2520class%253D%2522underlined%2522%253Eunderlined%253C%252Fspan%253E%2520text.%2520%253C%252Fdiv%253E"
+                 sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
     </div>
-</div>
-<footer class="footer">
-    <div class="footer-text"> Follow me on: </div>
-   <a href="www.linkedin.com/in/priya-gupta-187b0821" target="_blank">
-       <i class="fab fa-linkedin"></i>    
-   </a>
-   <a href="https://github.com/priyagupta314-work">
-   <i class="fab fa-github-square"></i>
-   </a>
-   <a href="https://www.facebook.com/priya314/">
-   <i class="fab fa-facebook-square"></i>
-   </a>
-   <a href="https://www.instagram.com/priya0314/">
-   <i class="fab fa-instagram-square"></i>
-   </a>
-   <a href="https://twitter.com/priyaGupta_pi">
-   <i class="fab fa-twitter-square"></i>
-   </a>
-       <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021  </span></div>
-       
-
-</footer>
-
+    <footer class="footer">
+        <div class="footer-head"> Follow me on: </div>
+        <div class="social-handle">
+        <a target="_blank" href="https://www.linkedin.com/in/priya-gupta-187b0821/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/priyagupta314-work">
+            <i class="fab fa-github-square"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/priya314/">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/priya0314/">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/priyaGupta_pi">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        </div>
+        <div class="footer-text"> MADE IN INDIA ❤️ <span> ©️ Priya Gupta, 2021 </span></div>
+    </footer>
 </body>
 </html>
